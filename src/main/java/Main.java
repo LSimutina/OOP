@@ -5,36 +5,34 @@ public class Main {
 //        Задание 3
 //        Задание 2
 
+//        Задаем значения с указанием двух Точек
 //        Line line1 = new Line(new Point(1, 3), new Point(5, 8));
 //        Line line2 = new Line(new Point(10,11), new Point(15,19));
 //        Line line3 = new Line(line1.coordinateFinish, line2.coordinateStart);
 
+//        Задаем значения с указанием четырех целых чисел (x y начала и x y конца)
         Line line1 = new Line(1, 3, 5, 8);
         Line line2 = new Line(10, 11, 15, 19);
-        Line line3 = new Line(line1.xF, line1.yF, line2.xS, line2.yS);
-
-        System.out.println("line1 " + line1);
-        System.out.println("line2 " + line2);
+        Line line3 = new Line(line1.coordinateFinish.x, line1.coordinateFinish.y, line2.coordinateStart.x, line2.coordinateStart.y);
 
 //        Текстовое представление Линии 3
+        System.out.println("Текстовое представление Линии 3");
         System.out.println("line3 " + line3);
         System.out.println(" ");
+
 //        Измененное текстовое представление Линии 3 (переделать)
-        line1.xF = 10;
-        line1.yF = 10;
-        line2.xS = 10;
-        line2.yS = 10;
+        line3.coordinateStart.x = 2;
+        line3.coordinateStart.y = 4;
+        line3.coordinateFinish.x = 6;
+        line3.coordinateFinish.y = 8;
 
-        Line lineTmp = new Line(line1.xF, line1.yF, line2.xS, line2.yS);
-        line3=lineTmp;
-
-        System.out.println("line1 " + line1);
-        System.out.println("line2 " + line2);
+        System.out.println("Измененное представление Линии 3");
         System.out.println("line3 " + line3);
+        System.out.println(" ");
 
 //        Суммарная длина всех трех линий
+        System.out.println("Суммарная длина всех трех линий:");
         System.out.println(line1.getLength() + line2.getLength() + line3.getLength());
-
 
 //        Задание 1
 /*

@@ -7,10 +7,8 @@ public class Line {
     Point coordinateFinish = new Point(xF, yF);
 
     public Line(int xS, int yS, int xF, int yF) {
-        this.xS = xS;
-        this.yS = yS;
-        this.xF = xF;
-        this.yF = yF;
+        this.coordinateStart = new Point(xS,yS);
+        this.coordinateFinish = new Point(xF,yF);
     }
 
     public Line(Point coordinateStart, Point coordinateFinish) {
@@ -19,21 +17,12 @@ public class Line {
     }
 
     public String toString() {
-        return "Линия от {" +
-                xS +
-                "; " + yS +
-                "} до {" + xF +
-                "; " + yF +
-                "}";
-    }
-
-    public String toString(Point coordinateStart, Point coordinateFinish) {
         return "Линия от " +
                 coordinateStart +
                 " до " + coordinateFinish;
     }
 
     public int getLength() {
-        return (int) Math.sqrt(Math.pow((xF - xS), 2) + Math.pow((yF - yS), 2));
+        return (int) Math.sqrt(Math.pow((coordinateFinish.x - coordinateStart.x), 2) + Math.pow((coordinateFinish.y - coordinateStart.y), 2));
     }
 }
