@@ -1,10 +1,7 @@
 
 public class Line {
-    int xS, yS; // координата начала линии (S - start)
-    int xF, yF; // координата конца линии (F - finish
-
-    Point coordinateStart = new Point(xS, yS);
-    Point coordinateFinish = new Point(xF, yF);
+    Point coordinateStart;
+    Point coordinateFinish;
 
     public Line(int xS, int yS, int xF, int yF) {
         this.coordinateStart = new Point(xS,yS);

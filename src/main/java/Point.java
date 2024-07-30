@@ -6,6 +6,10 @@ public class Point {
         this.y = y;
     }
 
+    public void setX(int x) {
+        this.x = x;
+    }
+
     @Override
     public String toString() {
         return "{" +
