@@ -4,13 +4,20 @@ public class Main {
     public static void main(String[] args) {
 //        6. ООП
 //        Задание 4
-//        Задание 3
+        Fraction f1=new Fraction(1, 3);
+        Fraction f2=new Fraction(2, 5);
+        Fraction f3=new Fraction(7, 8);
 
+        System.out.println(f1.sum(f2).sum(f3).minus(5));
+
+
+/*
+//        Задание 3
 //        создание ломанной  {1;5}, {2;8}, {5;3}, {8,9}
-        Point point1 = new Point(1,5);
-        Point point2 = new Point(2,8);
-        Point point3 = new Point(5,3);
-        Point point4 = new Point(8,9);
+        ObjectClassInit.Point point1 = new ObjectClassInit.Point(1,5);
+        ObjectClassInit.Point point2 = new ObjectClassInit.Point(2,8);
+        ObjectClassInit.Point point3 = new ObjectClassInit.Point(5,3);
+        ObjectClassInit.Point point4 = new ObjectClassInit.Point(8,9);
 
         PolyLine polyLine = new PolyLine(point1, point2, point3, point4);
 
@@ -42,8 +49,8 @@ public class Main {
 //        Задание 2
 
 //        Задаем значения с указанием двух Точек
-        Line line1 = new Line(new Point(1, 3), new Point(5, 8));
-        Line line2 = new Line(new Point(10,11), new Point(15,19));
+        Line line1 = new Line(new ObjectClassInit.Point(1, 3), new ObjectClassInit.Point(5, 8));
+        Line line2 = new Line(new ObjectClassInit.Point(10,11), new ObjectClassInit.Point(15,19));
         Line line3 = new Line(line1.coordinateFinish, line2.coordinateStart);
 
 //        Задаем значения с указанием четырех целых чисел (x y начала и x y конца)
@@ -72,9 +79,9 @@ public class Main {
 
 //        Задание 1
 
-        Point coordinate1 = new Point(1, 3);
-        Point coordinate2 = new Point(1, 3);
-        Point coordinate3 = new Point(5, 8);
+        ObjectClassInit.Point coordinate1 = new ObjectClassInit.Point(1, 3);
+        ObjectClassInit.Point coordinate2 = new ObjectClassInit.Point(1, 3);
+        ObjectClassInit.Point coordinate3 = new ObjectClassInit.Point(5, 8);
 
         System.out.println(coordinate1);
         System.out.println(coordinate2);
@@ -82,6 +89,6 @@ public class Main {
 
         System.out.println(coordinate1 == coordinate2);
         System.out.println(coordinate2 == coordinate3);
-
+*/
     }
 }

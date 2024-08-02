@@ -1,4 +1,3 @@
-
 public class Line {
     Point coordinateStart;
     Point coordinateFinish;
