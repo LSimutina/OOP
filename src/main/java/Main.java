@@ -1,23 +1,59 @@
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
 //        6. ООП
-//        Задание 4
+//        Задание 2. Квадрат
+//        Square squareHighLeft =new Square(5,2,3);
+//        System.out.println(squareHighLeft);
+////        Square squareLowLeft = squareHighLeft.
+//
+//        Square squareLowLeft = squareHighLeft;
+
+//        Задание 1. Дробь
+/*
         Fraction f1=new Fraction(1, 3);
         Fraction f2=new Fraction(2, 5);
         Fraction f3=new Fraction(7, 8);
 
         System.out.println(f1.sum(f2).sum(f3).minus(5));
+*/
+//        Задание 4
+
+        SetOfPaths path1= new SetOfPaths("Самара", 3);
+        SetOfPaths path2= new SetOfPaths("Саратов", 4);
+        SetOfPaths path3= new SetOfPaths("Воронеж", 120);
+        SetOfPaths path4= new SetOfPaths("Питер", 230);
+        SetOfPaths path5= new SetOfPaths("Волгоград", 180);
+
+        List<SetOfPaths> paths1 = new ArrayList<>();
+        paths1.add(0, path1); // C
+        paths1.add(1, path2); // D
+        paths1.add(2, path3); // E
+        paths1.add(3, path4); //
+        paths1.add(4, path5); //
+
+        System.out.println(paths1);
+
+        City city1= new City("Москва", paths1);
+        System.out.println(city1);
+
+        paths1.add(5,path1);
+        System.out.println(city1);
+
+//        city1.travelBy(3);
+
 
 
 /*
 //        Задание 3
 //        создание ломанной  {1;5}, {2;8}, {5;3}, {8,9}
-        ObjectClassInit.Point point1 = new ObjectClassInit.Point(1,5);
-        ObjectClassInit.Point point2 = new ObjectClassInit.Point(2,8);
-        ObjectClassInit.Point point3 = new ObjectClassInit.Point(5,3);
-        ObjectClassInit.Point point4 = new ObjectClassInit.Point(8,9);
+        Point point1 = new Point(1,5);
+        Point point2 = new Point(2,8);
+        Point point3 = new Point(5,3);
+        Point point4 = new Point(8,9);
 
         PolyLine polyLine = new PolyLine(point1, point2, point3, point4);
 
@@ -49,8 +85,8 @@ public class Main {
 //        Задание 2
 
 //        Задаем значения с указанием двух Точек
-        Line line1 = new Line(new ObjectClassInit.Point(1, 3), new ObjectClassInit.Point(5, 8));
-        Line line2 = new Line(new ObjectClassInit.Point(10,11), new ObjectClassInit.Point(15,19));
+        Line line1 = new Line(new Point(1, 3), new Point(5, 8));
+        Line line2 = new Line(new Point(10,11), new Point(15,19));
         Line line3 = new Line(line1.coordinateFinish, line2.coordinateStart);
 
 //        Задаем значения с указанием четырех целых чисел (x y начала и x y конца)
@@ -79,9 +115,9 @@ public class Main {
 
 //        Задание 1
 
-        ObjectClassInit.Point coordinate1 = new ObjectClassInit.Point(1, 3);
-        ObjectClassInit.Point coordinate2 = new ObjectClassInit.Point(1, 3);
-        ObjectClassInit.Point coordinate3 = new ObjectClassInit.Point(5, 8);
+        Point coordinate1 = new Point(1, 3);
+        Point coordinate2 = new Point(1, 3);
+        Point coordinate3 = new Point(5, 8);
 
         System.out.println(coordinate1);
         System.out.println(coordinate2);
