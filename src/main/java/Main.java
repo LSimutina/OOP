@@ -6,11 +6,14 @@ public class Main {
     public static void main(String[] args) {
 //        6. ООП
 //        Задание 2. Квадрат
-//        Square squareHighLeft =new Square(5,2,3);
-//        System.out.println(squareHighLeft);
-////        Square squareLowLeft = squareHighLeft.
-//
-//        Square squareLowLeft = squareHighLeft;
+        Square squareHighLeft =new Square(5,2,3);
+        System.out.println(squareHighLeft);
+//        Square squareLowLeft = squareHighLeft.
+        squareHighLeft.setLeftPointX(5);
+        squareHighLeft.setLeftPointY(7);
+        squareHighLeft.setSideLength(12);
+
+        System.out.println(squareHighLeft);
 
 //        Задание 1. Дробь
 /*
@@ -22,26 +25,26 @@ public class Main {
 */
 //        Задание 4
 
-        SetOfPaths path1= new SetOfPaths("Самара", 3);
-        SetOfPaths path2= new SetOfPaths("Саратов", 4);
-        SetOfPaths path3= new SetOfPaths("Воронеж", 120);
-        SetOfPaths path4= new SetOfPaths("Питер", 230);
-        SetOfPaths path5= new SetOfPaths("Волгоград", 180);
-
-        List<SetOfPaths> paths1 = new ArrayList<>();
-        paths1.add(0, path1); // C
-        paths1.add(1, path2); // D
-        paths1.add(2, path3); // E
-        paths1.add(3, path4); //
-        paths1.add(4, path5); //
-
-        System.out.println(paths1);
-
-        City city1= new City("Москва", paths1);
-        System.out.println(city1);
-
-        paths1.add(5,path1);
-        System.out.println(city1);
+//        SetOfPaths path1= new SetOfPaths("Самара", 3);
+//        SetOfPaths path2= new SetOfPaths("Саратов", 4);
+//        SetOfPaths path3= new SetOfPaths("Воронеж", 120);
+//        SetOfPaths path4= new SetOfPaths("Питер", 230);
+//        SetOfPaths path5= new SetOfPaths("Волгоград", 180);
+//
+//        List<SetOfPaths> paths1 = new ArrayList<>();
+//        paths1.add(0, path1); // C
+//        paths1.add(1, path2); // D
+//        paths1.add(2, path3); // E
+//        paths1.add(3, path4); //
+//        paths1.add(4, path5); //
+//
+//        System.out.println(paths1);
+//
+//        City city1= new City("Москва", paths1);
+//        System.out.println(city1);
+//
+//        paths1.add(5,path1);
+//        System.out.println(city1);
 
 //        city1.travelBy(3);
 

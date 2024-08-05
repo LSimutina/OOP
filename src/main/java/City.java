@@ -20,9 +20,11 @@ public class City {
 
 //    public City travelBy(int count) {
 //        City nameCity = this;
-//        for (int i = 0; i <= count; i++) {
+//        for (SetOfPaths i: setOfPaths){
 //            if (setOfPaths == null ) break;
-////            nameCity= SetOfPaths.city;  как запомнить последний город????????
+//            while(setOfPaths(i)!=count) {
+//                nameCity= SetOfPaths.city;  //как запомнить последний город????????
+//            }
 //        }
 //        return nameCity;
 //    }
