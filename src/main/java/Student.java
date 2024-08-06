@@ -33,8 +33,8 @@ public class Student {
 
     public void setGrades(int newGrades) {
         isPositiveGrades(newGrades);
-        if(grades[0]==0){
-            grades[0]=newGrades;
+        if (grades[0] == 0) {
+            grades[0] = newGrades;
         } else {
             this.grades = Arrays.copyOf(this.grades, this.grades.length + 1);
             grades[grades.length - 1] = newGrades;
