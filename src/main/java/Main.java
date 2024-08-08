@@ -6,14 +6,14 @@ public class Main {
     public static void main(String[] args) {
 //        6. ООП
 //        Задание 2. Квадрат
-        Square squareHighLeft =new Square(5,2,3);
-        System.out.println(squareHighLeft);
+//        Square squareHighLeft =new Square(5,2,3);
+//        System.out.println(squareHighLeft);
 //        Square squareLowLeft = squareHighLeft.
-        squareHighLeft.setLeftPointX(5);
-        squareHighLeft.setLeftPointY(7);
-        squareHighLeft.setSideLength(12);
-
-        System.out.println(squareHighLeft);
+//        squareHighLeft.setLeftPointX(5);
+//        squareHighLeft.setLeftPointY(7);
+//        squareHighLeft.setSideLength(12);
+//
+//        System.out.println(squareHighLeft);
 
 //        Задание 1. Дробь
 /*
@@ -24,12 +24,30 @@ public class Main {
         System.out.println(f1.sum(f2).sum(f3).minus(5));
 */
 //        Задание 4
+        City a = new City("A"); //пути в   b,f,d
+        City b = new City("B"); //пути в   a,c
+        City c = new City("C"); //пути в   b,d
+        City d = new City("D"); //пути в   c,e,a
+        City e = new City("E"); //пути в   f
+        City f = new City("F"); //пути в   e,b
 
-//        SetOfPaths path1= new SetOfPaths("Самара", 3);
-//        SetOfPaths path2= new SetOfPaths("Саратов", 4);
-//        SetOfPaths path3= new SetOfPaths("Воронеж", 120);
-//        SetOfPaths path4= new SetOfPaths("Питер", 230);
-//        SetOfPaths path5= new SetOfPaths("Волгоград", 180);
+//        System.out.println(a.nameCity);
+        a.addSetOfPath(b, 5);
+        a.addSetOfPath(f, 1);
+        a.addSetOfPath(d, 6);
+        b.addSetOfPath(a, 5);
+        b.addSetOfPath(c, 3);
+        c.addSetOfPath(b, 3);
+        c.addSetOfPath(d, 4);
+        d.addSetOfPath(c, 4);
+        d.addSetOfPath(e, 2);
+        d.addSetOfPath(a, 6);
+        e.addSetOfPath(f, 2);
+        f.addSetOfPath(e, 2);
+        f.addSetOfPath(b, 1);
+
+        System.out.println(b.travelBy(0));
+
 //
 //        List<SetOfPaths> paths1 = new ArrayList<>();
 //        paths1.add(0, path1); // C

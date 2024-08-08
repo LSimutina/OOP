@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 import java.util.List;
 
 public class City {
@@ -18,15 +19,19 @@ public class City {
         return nameCity + setOfPaths;
     }
 
-//    public City travelBy(int count) {
-//        City nameCity = this;
-//        for (SetOfPaths i: setOfPaths){
-//            if (setOfPaths == null ) break;
-//            while(setOfPaths(i)!=count) {
-//                nameCity= SetOfPaths.city;  //как запомнить последний город????????
-//            }
-//        }
-//        return nameCity;
-//    }
+    public void addSetOfPath(City city, int price) {
+        SetOfPaths setOfPaths = new SetOfPaths(city, price);
+        List<SetOfPaths> paths = new ArrayList<>();
+        paths.add(0, setOfPaths);
+    }
 
+    public City travelBy(int count) {
+        City city = this.setOfPaths.get(0).city; // в текущем списке путей берется первый город
+        if (count == 0) // либо количество городов не станет равным n
+            return city;
+        else {
+//            count--;
+            return city.travelBy(count);
+        }
+    }
 }

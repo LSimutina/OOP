@@ -1,8 +1,8 @@
 public class SetOfPaths {
-    String city;
+    City city;
     int price;
 
-    public SetOfPaths(String city, int price) {
+    public SetOfPaths(City city, int price) {
         this.city = city;
         this.price = price;
     }
