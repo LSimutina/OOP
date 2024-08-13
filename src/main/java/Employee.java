@@ -1,22 +1,22 @@
 public class Employee {
-    String name;
+    String nameEmp;
     Department dep;
 
     public Employee(String name) {
-        this.name = name;
+        this.nameEmp = name;
     }
 
     public Employee(String name, Department dep) {
-        this.name = name;
+        this.nameEmp = name;
         this.dep = dep;
     }
 
-    public String getName() {
-        return name;
+    public String getNameEmp() {
+        return nameEmp;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setNameEmp(String nameEmp) {
+        this.nameEmp = nameEmp;
     }
 
     public Department getDep() {
@@ -29,7 +29,7 @@ public class Employee {
 
     @Override
     public String toString() {
-        if (this == dep.getBoss()) return name + " начальник отдела " + dep.getName();
-        return name + " работает в отделе " + dep;
+        if (this == dep.getBoss()) return nameEmp + " начальник отдела " + dep.getName();
+        return nameEmp + " работает в отделе " + dep;
     }
 }

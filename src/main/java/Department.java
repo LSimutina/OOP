@@ -33,12 +33,13 @@ public class Department {
 
     @Override
     public String toString() {
-        return name + ", начальник которого " + boss.name;
+        return name + ", начальник которого " + boss.nameEmp;
     }
 
     public void validBossDep(Employee boss){
         if(boss.getDep() != this){
             boss.setDep(this);
         }
+
     }
 }
